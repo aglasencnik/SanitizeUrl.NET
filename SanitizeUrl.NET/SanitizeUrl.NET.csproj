@@ -2,6 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SanitizeUrl</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SanitizeUrl.NET</Title>
+    <Version>0.0.1</Version>
+    <Authors>Amadej Glasenčnik</Authors>
+    <Description>A lightweight .NET library that sanitizes URLs by removing potentially harmful or unwanted characters. Inspired by Braintree's Sanitize URL for JavaScript, this package ensures URLs are safe for use in web applications, preventing XSS attacks and other vulnerabilities.</Description>
+    <Copyright>Copyright (c) Amadej Glasenčnik 2024.</Copyright>
+    <PackageProjectUrl>https://github.com/aglasencnik/SanitizeUrl.NET</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/aglasencnik/SanitizeUrl.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>csharp; dotnet; nuget; sanitize-url</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
